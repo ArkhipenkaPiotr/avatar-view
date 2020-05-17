@@ -20,7 +20,7 @@ public class ExampleActivity extends AppCompatActivity {
     private static final String OBAMA_IMAGE = "http://pixel.nymag.com/imgs/daily/vulture/2016/08/11/11-obama-sex-playlist.w529.h529.jpg";
     private static final String DUDA_IMAGE = "https://pbs.twimg.com/profile_images/556495456805453826/wKEOCDN0_400x400.png";
     private static final String STONOGA_IMAGE = "http://brzeg24.pl/wp-content/uploads/2015/06/Zbigniew-Stonoga-e1434539892479.jpg";
-    private static final String LINDA_IMAGE = "http://www.cyfraplus.pl/ms_galeria/fotostar/3032_c.jpg";
+    private static final String LINDA_IMAGE = "https://i.picsum.photos/id/1061/200/200.jpg";
 
     private AvatarView avatarWithNoImageSmall;
     private AvatarView avatarWithNoImage;
