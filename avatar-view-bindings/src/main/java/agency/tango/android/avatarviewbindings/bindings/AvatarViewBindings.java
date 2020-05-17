@@ -1,6 +1,6 @@
 package agency.tango.android.avatarviewbindings.bindings;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 
 import agency.tango.android.avatarview.IImageLoader;
 import agency.tango.android.avatarview.views.AvatarView;

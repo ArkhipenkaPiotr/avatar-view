@@ -2,10 +2,10 @@ buildscript {
     repositories {
         jcenter()
         maven { url "https://jitpack.io" }
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
-        classpath 'com.novoda:bintray-release:0.3.4'
+        classpath 'com.android.tools.build:gradle:4.0.0-rc01'
     }
 }
 
@@ -13,6 +13,7 @@ allprojects {
     repositories {
         jcenter()
         maven { url "https://jitpack.io" }
+        google()
     }
 }
 

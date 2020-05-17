@@ -14,7 +14,7 @@ Please take a look at the examples below:
 |:-:|:-:|
 | ![FirstExample] | ![SecondExample] |
 
-## Usage
+## UsageА
 
 This library can be used in two ways: using [standard Android methods][StandardMethodsPart] and using [Android Data Binding][DataBindingPart].
 

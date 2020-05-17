@@ -1,6 +1,6 @@
 package agency.tango.android.avatarview;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import agency.tango.android.avatarview.views.AvatarView;
 

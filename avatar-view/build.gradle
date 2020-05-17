@@ -1,14 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
 apply from: "$rootDir/versions.gradle"
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
     }
@@ -25,17 +24,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'com.jakewharton.timber:timber:4.3.0'
-    compile "com.android.support:support-annotations:${project.androidSupport}"
-}
-
-publish {
-    userOrg = 'tangoagency'
-    groupId = 'agency.tango.android'
-    artifactId = 'avatar-view'
-    publishVersion = '0.0.2'
-    desc = ''
-    website = 'https://github.com/TangoAgency/avatar-view'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.jakewharton.timber:timber:4.3.0'
 }
