@@ -21,6 +21,7 @@ public class ExampleActivity extends AppCompatActivity {
     private static final String DUDA_IMAGE = "https://pbs.twimg.com/profile_images/556495456805453826/wKEOCDN0_400x400.png";
     private static final String STONOGA_IMAGE = "http://brzeg24.pl/wp-content/uploads/2015/06/Zbigniew-Stonoga-e1434539892479.jpg";
     private static final String LINDA_IMAGE = "https://i.picsum.photos/id/1061/200/200.jpg";
+    private static final String INCORRECT = "https://ipicsum.photos/id/1061/200/200.jpg";
 
     private AvatarView avatarWithNoImageSmall;
     private AvatarView avatarWithNoImage;
@@ -50,7 +51,7 @@ public class ExampleActivity extends AppCompatActivity {
         avatarWithImageBiggest = (AvatarView) findViewById(R.id.avatar_image_biggest);
         refreshableAvatar = (AvatarView) findViewById(R.id.refreshable_avatar);
 
-        refreshableAvatarPlaceholder = new AvatarPlaceholder("Linda", 30);
+        refreshableAvatarPlaceholder = new AvatarPlaceholder("Linda Hoffman", 30);
 
         loadAvatarData();
     }
@@ -76,7 +77,7 @@ public class ExampleActivity extends AppCompatActivity {
 
     public void reloadImageWithGlide(View v) {
         imageLoader = new GlideLoader();
-        imageLoader.loadImage(refreshableAvatar, refreshableAvatarPlaceholder, String.format("%s?%s", LINDA_IMAGE, new Date().getTime()));
+        imageLoader.loadImage(refreshableAvatar, refreshableAvatarPlaceholder, String.format("%s?%s", INCORRECT, new Date().getTime()));
     }
 
 }

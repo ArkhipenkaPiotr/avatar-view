@@ -8,6 +8,8 @@ import android.graphics.PixelFormat;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.text.TextUtils;
+
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 
@@ -106,7 +108,20 @@ public class AvatarPlaceholder extends Drawable {
     }
 
     private String convertNameToAvatarText(String name) {
-        return StringUtils.isNotNullOrEmpty(name) ? name.substring(0, 1).toUpperCase() : defaultString;
+        String resultString = buildAvatarText(name);
+        return StringUtils.isNotNullOrEmpty(resultString) ? resultString.toUpperCase() : defaultString;
+    }
+
+    private String buildAvatarText(String name) {
+        if (name == null) return "";
+        String[] splited = name.split(" ");
+        StringBuilder resultStringBuilder = new StringBuilder();
+        for (String text : splited) {
+            if (!TextUtils.isEmpty(text)) {
+                resultStringBuilder.append(text.charAt(0));
+            }
+        }
+        return resultStringBuilder.toString();
     }
 
     private String convertStringToColor(String text) {
